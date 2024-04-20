@@ -1,0 +1,89 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+.register {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(207, 207, 211, 0.37);
+  height: 100vh;
+  width: 100%;
+
+  &-container {
+    h1 {
+      text-align: center;
+      font-size: 70px;
+      margin-top: 80px;
+      margin-bottom: 30px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 30vw;
+      height: auto;
+      padding: 20px;
+      border-radius: 8px;
+
+      @include media-breakpoint-down(lg) {
+        width: 50vw;
+      }
+
+      label {
+        margin-top: 10px;
+        margin-bottom: 4px;
+        font-weight: 600;
+      }
+
+      .input {
+        &-email,
+        &-password {
+          height: 5vh;
+          border-radius: 5px;
+          padding: 0 10px;
+          border: 1px solid black;
+          transition: border 0.3s linear, box-shadow 0.4s linear;
+          box-shadow: 0 0 0 2px rgba(238, 130, 238, 0);
+          font-size: 15px;
+        }
+
+        &-email:focus,
+        &-password:focus {
+          outline: none;
+        }
+
+        &-email:hover,
+        &-password:hover {
+          border: 1px solid violet;
+          box-shadow: 0 0 0 2px rgba(238, 130, 238, 0.31);
+          cursor: pointer;
+        }
+      }
+
+      .register-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+      }
+    }
+
+    p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-register {
+  height: 36px;
+  width: 12vw;
+  border-radius: 6px;
+  border: 0;
+  background-color: rgba(64, 50, 191, 0.644);
+  color: #fff;
+}

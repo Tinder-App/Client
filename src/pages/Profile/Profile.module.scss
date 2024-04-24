@@ -1,0 +1,28 @@
+.profile {
+  width: 50%;
+  height: 100vh;
+  //   background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .no-post {
+    border: 5px dashed rgba(226, 225, 230, 0.785);
+    padding: 16px;
+    .create-post-icon {
+      width: 7rem;
+      height: 7rem;
+      filter: brightness(0) saturate(100%) invert(87%) sepia(0%) saturate(975%)
+        hue-rotate(301deg) brightness(102%) contrast(97%);
+    }
+    p {
+      text-align: center;
+    }
+  }
+
+  .no-post:hover {
+    cursor: pointer;
+  }
+}

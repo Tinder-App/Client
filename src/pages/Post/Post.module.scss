@@ -1,0 +1,15 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+.post {
+  height: 100vh;
+  width: 40%;
+  position: relative;
+  background-color: #ffffff00;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+}
